@@ -95,7 +95,7 @@ def MC_step(arr, Ts, nmax):
     accept = 0
     xran = np.random.randint(0, high=nmax, size=(nmax, nmax))
     yran = np.random.randint(0, high=nmax, size=(nmax, nmax))
-    aran = np.random.normal(scale=scale, size=(nmax, nmax))
+    aran = np.random.normal(0.0, scale, (nmax, nmax))
 
     for i in range(nmax):
         for j in range(nmax):
